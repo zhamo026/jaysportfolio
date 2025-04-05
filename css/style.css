@@ -58,10 +58,12 @@ body {
 /* Main Content */
 .content {
     flex: 1;
-    margin-left: 250px; /* Ensures it doesn't overlap with the sidebar */
+    margin-left: 280px; /* Moves content further to the right */
     padding: 20px;
+    max-width: 900px; /* Keeps it centered and not too wide */
 }
 
+/* Blog Post Styling */
 .blog-list {
     display: flex;
     flex-direction: column;
