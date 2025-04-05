@@ -1,9 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const projectsToggle = document.getElementById('projects-toggle');
-  const projectsMenu = document.getElementById('projects-menu');
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Website Loaded Successfully!");
 
-  projectsToggle.addEventListener('click', function(e) {
-    e.preventDefault(); // Prevent default behavior of the link
-    projectsMenu.classList.toggle('show');
+  const toggle = document.getElementById("projects-toggle");
+  const menu = document.getElementById("projects-menu");
+
+  toggle.addEventListener("click", function (e) {
+    e.preventDefault();
+    menu.classList.toggle("show");
   });
 });
