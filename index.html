@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jay's Profile</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
+    <img src="assets/images/profile.jpg" alt="Profile Picture" class="profile-pic" />
     <h1>Jay</h1>
     <p><i>Cloud / DevOps / Data Analytics / HomeLab / Graphic Design / Illustration</i></p>
 
@@ -44,87 +44,81 @@
       <h2>EXPERIENCE</h2>
     </section>
 
-    <!-- Skills Section -->
-    <section>
-      <h2>Skills</h2>
-      <div class="skills-container">
-        <!-- Cloud Skills -->
-        <div class="skill-item">
-          <img src="images/aws.png" alt="AWS" />
-          <p>AWS</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/docker.png" alt="Docker" />
-          <p>Docker</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/proxmox.png" alt="Proxmox" />
-          <p>Proxmox</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/kubernetes.png" alt="Kubernetes" />
-          <p>Kubernetes</p>
-        </div>
-
-        <!-- Data Analytics Skills -->
-        <div class="skill-item">
-          <img src="images/mysql.png" alt="MySQL" />
-          <p>MySQL</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/mariadb.png" alt="MariaDB" class="mariadb"/>
-          <p>MariaDB</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/postgresql.png" alt="PostgreSQL" />
-          <p>PostgreSQL</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/tableau.png" alt="Tableau" />
-          <p>Tableau</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/rstudio.png" alt="RStudio" />
-          <p>RStudio</p>
-        </div>
-
-        <!-- Graphic Design Skills -->
-        <div class="skill-item">
-          <img src="images/affinity.png" alt="Affinity Designer" />
-          <p>Affinity</p>
-        </div>
-        <div class="skill-item">
-          <img src="images/adobe.png" alt="Adobe" class="adobe"/>
-          <p>Adobe</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Blog List (still as content area) -->
+    <!-- Blog List with Experience Icons -->
     <section class="blog-list">
+      <!-- Cloud Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>CLOUD</h2>
-          <p>I specialize in Cloud, DevOps, Data Analytics, HomeLab setups, Graphic Design, and Illustration. I'm passionate about technology and creating things that solve real-world problems.</p>
+          <div class="skills-container">
+            <div class="skill-item">
+              <img src="assets/images/aws.png" alt="AWS" class="skill-icon" />
+              <p>AWS</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/docker.png" alt="Docker" class="skill-icon" />
+              <p>Docker</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/proxmox.png" alt="Proxmox" class="skill-icon" />
+              <p>Proxmox</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/kubernetes.png" alt="Kubernetes" class="skill-icon" />
+              <p>Kubernetes</p>
+            </div>
+          </div>
         </div>
       </article>
 
+      <!-- Data Analytics Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>DATA ANALYTICS</h2>
-          <p>I have experience in working with MySQL, MariaDB, PostgreSQL, Tableau, RStudio, and more. I love creating data-driven solutions that help businesses and individuals make informed decisions.</p>
+          <div class="skills-container">
+            <div class="skill-item">
+              <img src="assets/images/mysql.png" alt="MySQL" class="skill-icon" />
+              <p>MySQL</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/mariadb.png" alt="MariaDB" class="skill-icon mariadb" />
+              <p>MariaDB</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/postgresql.png" alt="PostgreSQL" class="skill-icon" />
+              <p>PostgreSQL</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/tableau.png" alt="Tableau" class="skill-icon" />
+              <p>Tableau</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/rstudio.png" alt="RStudio" class="skill-icon" />
+              <p>RStudio</p>
+            </div>
+          </div>
         </div>
       </article>
 
+      <!-- Graphic Design Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>GRAPHIC DESIGN</h2>
-          <p>I enjoy designing and illustrating ideas using tools like Affinity Designer and Adobe products. I can bring your ideas to life visually with a focus on clean, modern design.</p>
+          <div class="skills-container">
+            <div class="skill-item">
+              <img src="assets/images/affinity.png" alt="Affinity" class="skill-icon" />
+              <p>Affinity</p>
+            </div>
+            <div class="skill-item">
+              <img src="assets/images/adobe.png" alt="Adobe" class="skill-icon adobe" />
+              <p>Adobe</p>
+            </div>
+          </div>
         </div>
       </article>
     </section>
   </main>
 
-  <script src="js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
