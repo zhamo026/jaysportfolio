@@ -8,4 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
     menu.classList.toggle("show");
   });
+
+  // Optional: Close the submenu if clicking outside
+  document.addEventListener("click", function (e) {
+    if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
 });
