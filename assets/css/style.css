@@ -6,6 +6,7 @@ body {
   display: flex;
   height: 100vh;
   background-color: #f4f4f4;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Sidebar */
@@ -14,11 +15,12 @@ body {
   background: #ebebeb;
   padding: 20px;
   text-align: center;
-  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
+  bottom: 0;
   overflow-y: auto;
+  z-index: 10; /* Ensure sidebar is on top of content */
 }
 
 .profile-pic {
@@ -53,11 +55,19 @@ body {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  font-size: 16px; /* Default size for About, Projects, and Contact */
+  font-size: 16px;
 }
 
 .sidebar nav ul li a:hover {
   background: #ddd;
+}
+
+/* Main Content */
+.content {
+  margin-left: 250px; /* Space for the sidebar */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Skills section with flags */
@@ -104,12 +114,6 @@ body {
   font-size: 12px;
 }
 
-.sidebar p i img {
-  width: 16px;
-  margin-left: 5px;
-  vertical-align: middle;
-}
-
 /* Dropdown Menu (Smooth Transition) */
 .dropdown-content {
   display: none;
@@ -138,7 +142,8 @@ body {
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdown-content {
+/* Show dropdown when clicked */
+.dropdown-content.show {
   display: block;
   animation: dropdown-animate 0.5s ease-in-out;
 }
