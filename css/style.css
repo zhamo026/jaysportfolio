@@ -1,44 +1,135 @@
-/* General content layout */
-.content {
-  padding: 2rem;
-  margin-left: 250px;
-}
-
-/* Blog post container */
-.blog-post {
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
   background-color: #f4f4f4;
-  margin-bottom: 2rem;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Experience icon grid */
-.experience-icons {
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #ebebeb;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar nav ul li {
+  position: relative;
+  padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar nav ul li a:hover {
+  background: #ddd;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Skills Section */
+.skills-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.skills-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start;
-  margin-top: 1rem;
 }
 
-/* Icon item style */
-.icon-item {
-  text-align: center;
+.skill-item {
   width: 100px;
+  text-align: center;
 }
 
-.icon-item img {
-  width: 60px;
-  height: 60px;
+.skill-item img {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  background-color: #fff;
-  padding: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.icon-item p {
+.skill-item p {
   margin-top: 8px;
-  font-size: 0.9rem;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Blog Post Styling */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-post {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.post-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content span {
+  font-size: 12px;
+  color: #999;
 }
