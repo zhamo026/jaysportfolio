@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,6 +8,7 @@ body {
   background-color: #f4f4f4;
 }
 
+/* Sidebar */
 .sidebar {
   width: 250px;
   background: #ebebeb;
@@ -17,14 +19,16 @@ body {
   left: 0;
   top: 0;
   overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .profile-pic {
   width: 100px;
   border-radius: 50%;
+}
+
+.sidebar h1 {
+  font-size: 22px;
+  margin: 10px 0;
 }
 
 .sidebar nav ul {
@@ -34,7 +38,8 @@ body {
 }
 
 .sidebar nav ul li {
-  margin: 10px 0;
+  padding: 10px 0;
+  position: relative;
 }
 
 .sidebar nav ul li a {
@@ -44,67 +49,51 @@ body {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  text-align: left;
 }
 
-.sidebar nav ul li a:hover,
-.sidebar nav ul li a.active {
+.sidebar nav ul li a:hover {
   background: #ddd;
 }
 
-.sidebar nav ul li a i {
-  margin-right: 8px;
+/* Submenu Styling */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
 }
 
-/* Social Icons */
-.social-icons {
-  margin-top: 20px;
+.submenu.show {
+  display: block;
 }
 
-.social-icons a {
-  margin: 0 6px;
-  color: #444;
-  font-size: 18px;
-  transition: color 0.3s;
+.submenu li a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #333;
 }
 
-.social-icons a:hover {
-  color: #000;
+.submenu li a:hover {
+  background-color: #c0c0c0;
+  border-radius: 3px;
 }
 
 /* Main Content */
 .content {
   flex: 1;
   margin-left: 280px;
-  padding: 40px;
+  padding: 20px;
+  max-width: 900px;
 }
 
-.about-welcome {
-  max-width: 800px;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.about-welcome h2 {
+.welcome h2 {
   font-size: 28px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
-.about-welcome p {
+.welcome p {
   font-size: 16px;
+  color: #555;
   line-height: 1.6;
-  color: #444;
-}
-
-.about-welcome ul {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.about-welcome ul li {
-  padding: 5px 0;
-  font-size: 15px;
 }
