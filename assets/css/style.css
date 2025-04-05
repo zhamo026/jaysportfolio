@@ -120,6 +120,13 @@ body {
   margin-bottom: 10px;
 }
 
+/* Adjust size for MariaDB and Adobe icons */
+.skill-item.mariadb img,
+.skill-item.adobe img {
+  width: 40px;
+  height: 40px;
+}
+
 .skill-item p {
   font-size: 12px;
 }
