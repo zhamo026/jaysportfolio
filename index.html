@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Jay's Tech Blog</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
 </head>
 <body>
 
@@ -19,15 +18,15 @@
       <ul>
         <li><a href="#">About</a></li>
 
-        <!-- Projects dropdown with click-to-toggle -->
-        <li>
-          <a href="#" id="projects-toggle">
-            <i class="fa-solid fa-diagram-project"></i> Projects
-          </a>
-          <ul id="projects-menu" class="submenu">
-            <li><a href="#">Homelab Setup</a></li>
-            <li><a href="#">Cloud Tools</a></li>
-            <li><a href="#">DevOps Scripts</a></li>
+        <!-- Projects dropdown -->
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <ul class="dropdown-content flat">
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">DevOps</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Illustrations</a></li>
           </ul>
         </li>
 
@@ -38,9 +37,33 @@
 
   <!-- Main Content -->
   <main class="content">
-    <section class="welcome">
-      <h2>Hello, I'm Jay 👋</h2>
-      <p>I'm a software engineer with a passion for homelab, DevOps, and creative tech projects. This site showcases my journey, projects, and tutorials in cloud, automation, and design. Thanks for stopping by!</p>
+    <section class="blog-list">
+      <article class="blog-post">
+        <img src="images/vga-hdmi.jpg" alt="VGA to HDMI" />
+        <div class="post-content">
+          <h2>Turns Out, VGA to HDMI Isn’t That Simple...</h2>
+          <p>I tested 10 VGA to HDMI adapters and only some actually worked...</p>
+          <span>Mar 20, 2025 | Homelab</span>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img src="images/nebula-sync.jpg" alt="Nebula Sync" />
+        <div class="post-content">
+          <h2>Pi-hole Syncing... But Smarter...</h2>
+          <p>Running multiple Pi-hole servers has always been a challenge...</p>
+          <span>Mar 20, 2025 | Homelab</span>
+        </div>
+      </article>
+
+      <article class="blog-post">
+        <img src="images/jetkvm.jpg" alt="JetKVM" />
+        <div class="post-content">
+          <h2>6 JetKVMs, 1 Rack – The Ultimate Setup!</h2>
+          <p>I wanted to rackmount 6 JetKVMs in my server rack, thankfully there's a DIY solution for it...</p>
+          <span>Mar 10, 2025 | Homelab</span>
+        </div>
+      </article>
     </section>
   </main>
 
