@@ -6,7 +6,6 @@ body {
   display: flex;
   height: 100vh;
   background-color: #f4f4f4;
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Sidebar */
@@ -15,12 +14,11 @@ body {
   background: #ebebeb;
   padding: 20px;
   text-align: center;
+  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
-  bottom: 0;
   overflow-y: auto;
-  z-index: 10; /* Ensure sidebar is on top of content */
 }
 
 .profile-pic {
@@ -31,10 +29,6 @@ body {
 .sidebar h1 {
   font-size: 22px;
   margin: 10px 0;
-}
-
-.sidebar p {
-  font-size: 14px;
 }
 
 .sidebar nav ul {
@@ -55,7 +49,6 @@ body {
   display: block;
   padding: 10px;
   border-radius: 5px;
-  font-size: 16px;
 }
 
 .sidebar nav ul li a:hover {
@@ -64,13 +57,51 @@ body {
 
 /* Main Content */
 .content {
-  margin-left: 250px; /* Space for the sidebar */
+  flex: 1;
+  margin-left: 280px;
   padding: 20px;
-  width: 100%;
-  box-sizing: border-box;
+  max-width: 900px;
 }
 
-/* Skills section with flags */
+/* Blog Post Styling */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-post {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.post-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Skills section */
 .skills-container {
   display: flex;
   gap: 20px;
@@ -94,11 +125,17 @@ body {
 }
 
 .skill-item img {
-  width: 50px;
+  width: 50px;  
   height: 50px;
   border-radius: 50%;
   object-fit: contain;
-  object-position: center;
+}
+
+.skill-item img.mariadb,
+.skill-item img.adobe {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .skill-item p {
@@ -107,54 +144,4 @@ body {
   color: #333;
   line-height: 1.3;
   margin-bottom: 0;
-}
-
-/* Add smaller font size to the skills list in the sidebar */
-.sidebar p i {
-  font-size: 12px;
-}
-
-/* Dropdown Menu (Smooth Transition) */
-.dropdown-content {
-  display: none;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: #fff;
-  position: absolute;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-content li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
-}
-
-.dropdown-content li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.dropdown-content li a:hover {
-  background-color: #ddd;
-}
-
-/* Show dropdown when clicked */
-.dropdown-content.show {
-  display: block;
-  animation: dropdown-animate 0.5s ease-in-out;
-}
-
-@keyframes dropdown-animate {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
