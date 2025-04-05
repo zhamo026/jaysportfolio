@@ -55,22 +55,25 @@ body {
   background: #ddd;
 }
 
-/* Dropdown Menu */
+/* Dropdown Menu - hidden by default */
 .dropdown-content {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
   flex-direction: column;
   background-color: #dcdcdc;
-  padding: 10px;
   margin-top: 5px;
   text-align: left;
   border-radius: 5px;
-  opacity: 0; /* Start as invisible */
-  transition: opacity 0.3s ease-out; /* Smooth fade-in transition */
+  padding: 0 10px;
 }
 
-.dropdown:hover .dropdown-content {
-  display: flex;
-  opacity: 1; /* Fade in when hovering */
+/* When visible */
+.dropdown-content.show {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
 }
 
 /* Flat list with divider */
