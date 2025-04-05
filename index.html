@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
-<aside class="sidebar">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-    <h1>Jay</h1>
-    <p><i>Software Engineer | Tech Content Creator | HomeLab</i></p>
-    
-    <nav>
-        <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li> <!-- Changed from Merch -->
-            <li><a href="#">Contact</a></li> <!-- Changed from Sponsor -->
-        </ul>
-    </nav>
-</aside>
+    <title>Jay's Tech Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <h1>Jay</h1>
+        <p><i>Software Engineer | Tech Content Creator | HomeLab</i></p>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li> <!-- Changed from Merch -->
+                <li><a href="#">Contact</a></li> <!-- Changed from Sponsor -->
+            </ul>
+        </nav>
+    </aside>
 
+    <!-- Main Content -->
     <main class="content">
         <section class="blog-list">
             <article class="blog-post">
                 <img src="images/vga-hdmi.jpg" alt="VGA to HDMI">
                 <div class="post-content">
-                    <h2>T32423423423423erfsdfsdfhat Simple...</h2>
-                    <p>sdfsdfdfsdfd...</p>
+                    <h2>Turns Out, VGA to HDMI Isn’t That Simple...</h2>
+                    <p>I tested 10 VGA to HDMI adapters and only some actually worked...</p>
                     <span>Mar 20, 2025 | Homelab</span>
                 </div>
             </article>
@@ -34,13 +39,23 @@
             <article class="blog-post">
                 <img src="images/nebula-sync.jpg" alt="Nebula Sync">
                 <div class="post-content">
-                    <h2>Pi-hole Syncing... sdfsdfsdf...</h2>
-                    <p>Running multiple Pi-holedfsdfn a challenge...</p>
+                    <h2>Pi-hole Syncing... But Smarter...</h2>
+                    <p>Running multiple Pi-hole servers has always been a challenge...</p>
                     <span>Mar 20, 2025 | Homelab</span>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <img src="images/jetkvm.jpg" alt="JetKVM">
+                <div class="post-content">
+                    <h2>6 JetKVMs, 1 Rack – The Ultimate Setup!</h2>
+                    <p>I wanted to rackmount 6 JetKVMs in my server rack, thankfully there's a DIY solution for it...</p>
+                    <span>Mar 10, 2025 | Homelab</span>
                 </div>
             </article>
         </section>
     </main>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
