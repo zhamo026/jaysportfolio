@@ -55,6 +55,11 @@ body {
   background: #ddd;
 }
 
+/* Active Link */
+.sidebar nav ul li a.active {
+  background-color: #b8b8b8;
+}
+
 /* Dropdown Menu - hidden by default */
 .dropdown-content {
   max-height: 0;
