@@ -38,8 +38,8 @@ body {
 }
 
 .sidebar nav ul li {
-  padding: 10px 0;
   position: relative;
+  padding: 10px 0;
 }
 
 .sidebar nav ul li a {
@@ -55,28 +55,40 @@ body {
   background: #ddd;
 }
 
-/* Submenu Styling */
-.submenu {
+/* Dropdown Menu */
+.dropdown-content {
   display: none;
-  list-style: none;
-  padding-left: 15px;
+  flex-direction: column;
+  background-color: #dcdcdc;
+  padding: 10px;
   margin-top: 5px;
+  text-align: left;
+  border-radius: 5px;
+  opacity: 0; /* Start as invisible */
+  transition: opacity 0.3s ease-out; /* Smooth fade-in transition */
 }
 
-.submenu.show {
-  display: block;
+.dropdown:hover .dropdown-content {
+  display: flex;
+  opacity: 1; /* Fade in when hovering */
 }
 
-.submenu li a {
+/* Flat list with divider */
+.dropdown-content.flat a {
   font-weight: normal;
-  font-size: 14px;
   padding: 5px 10px;
+  font-size: 14px;
   color: #333;
 }
 
-.submenu li a:hover {
+.dropdown-content.flat a:hover {
   background-color: #c0c0c0;
   border-radius: 3px;
+}
+
+.dropdown-content .divider {
+  border-top: 1px solid #aaa;
+  margin: 8px 0;
 }
 
 /* Main Content */
@@ -87,13 +99,40 @@ body {
   max-width: 900px;
 }
 
-.welcome h2 {
-  font-size: 28px;
-  margin-bottom: 10px;
+/* Blog Post Styling */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.welcome p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
+.blog-post {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.post-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content span {
+  font-size: 12px;
+  color: #999;
 }
