@@ -1,72 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jay's Tech Blog</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
 
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
-    <h1>Jay</h1>
-    <p><i>Software Engineer | Tech Content Creator | HomeLab</i></p>
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: #ebebeb;
+  padding: 20px;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
 
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
+}
 
-        <!-- Projects dropdown -->
-        <li class="dropdown">
-          <a href="#" id="projects-toggle">Projects</a>
-          <ul class="dropdown-content flat" id="projects-menu">
-            <li><a href="#">Cloud</a></li>
-            <li><a href="#">DevOps</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Illustrations</a></li>
-          </ul>
-        </li>
+.sidebar h1 {
+  font-size: 22px;
+  margin: 10px 0;
+}
 
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </aside>
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
 
-  <!-- Main Content -->
-  <main class="content">
-    <section class="blog-list">
-      <article class="blog-post">
-        <img src="images/vga-hdmi.jpg" alt="VGA to HDMI" />
-        <div class="post-content">
-          <h2>Turns Out, VGA to HDMI Isn’t That Simple...</h2>
-          <p>I tested 10 VGA to HDMI adapters and only some actually worked...</p>
-          <span>Mar 20, 2025 | Homelab</span>
-        </div>
-      </article>
+.sidebar nav ul li {
+  position: relative;
+  padding: 10px 0;
+}
 
-      <article class="blog-post">
-        <img src="images/nebula-sync.jpg" alt="Nebula Sync" />
-        <div class="post-content">
-          <h2>Pi-hole Syncing... But Smarter...</h2>
-          <p>Running multiple Pi-hole servers has always been a challenge...</p>
-          <span>Mar 20, 2025 | Homelab</span>
-        </div>
-      </article>
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-      <article class="blog-post">
-        <img src="images/jetkvm.jpg" alt="JetKVM" />
-        <div class="post-content">
-          <h2>6 JetKVMs, 1 Rack – The Ultimate Setup!</h2>
-          <p>I wanted to rackmount 6 JetKVMs in my server rack, thankfully there's a DIY solution for it...</p>
-          <span>Mar 10, 2025 | Homelab</span>
-        </div>
-      </article>
-    </section>
-  </main>
+.sidebar nav ul li a:hover {
+  background: #ddd;
+}
 
-  <script src="js/script.js"></script>
-</body>
-</html>
+/* Dropdown Menu - hidden by default */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  flex-direction: column;
+  background-color: #dcdcdc;
+  margin-top: 5px;
+  text-align: left;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+/* When visible */
+.dropdown-content.show {
+  max-height: 500px;
+  opacity: 1;
+  padding: 10px;
+}
+
+/* Flat list with divider */
+.dropdown-content.flat a {
+  font-weight: normal;
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-content.flat a:hover {
+  background-color: #c0c0c0;
+  border-radius: 3px;
+}
+
+.dropdown-content .divider {
+  border-top: 1px solid #aaa;
+  margin: 8px 0;
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  margin-left: 280px;
+  padding: 20px;
+  max-width: 900px;
+}
+
+/* Blog Post Styling */
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-post {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-post img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.post-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.post-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.post-content span {
+  font-size: 12px;
+  color: #999;
+}
