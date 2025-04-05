@@ -63,7 +63,7 @@ body {
   max-width: 900px;
 }
 
-/* Blog List Styling */
+/* Blog Post Styling */
 .blog-list {
   display: flex;
   flex-direction: column;
@@ -72,46 +72,54 @@ body {
 
 .blog-post {
   display: flex;
-  flex-direction: column;
   background: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Tech Icons */
-.tech-icons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.tech-icon {
-  text-align: center;
-  width: 100px;
-}
-
-.tech-icon img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.blog-post img {
+  width: 150px;
+  height: 100px;
   object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
-.tech-icon p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-/* Post Content */
 .post-content h2 {
   margin: 0;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .post-content p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
 }
 
+.post-content span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Skills section */
+.skills-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  text-align: center;
+  width: 80px;
+}
+
+.skill-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.skill-item p {
+  font-size: 12px;
+}
