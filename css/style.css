@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    height: 100vh; /* Full height */
+    height: 100vh;
     background-color: #f4f4f4;
 }
 
@@ -14,8 +14,8 @@ body {
     background: #ebebeb;
     padding: 20px;
     text-align: center;
-    height: 100vh; /* Full height */
-    position: fixed; /* Fixed sidebar */
+    height: 100vh;
+    position: fixed;
     left: 0;
     top: 0;
     overflow-y: auto;
@@ -38,6 +38,7 @@ body {
 }
 
 .sidebar nav ul li {
+    position: relative;
     padding: 10px 0;
 }
 
@@ -50,17 +51,42 @@ body {
     border-radius: 5px;
 }
 
-.sidebar nav ul li a.active,
 .sidebar nav ul li a:hover {
     background: #ddd;
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #dcdcdc;
+    padding-left: 10px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.dropdown-content li {
+    padding: 5px 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content strong {
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
 }
 
 /* Main Content */
 .content {
     flex: 1;
-    margin-left: 280px; /* Moves content further to the right */
+    margin-left: 280px;
     padding: 20px;
-    max-width: 900px; /* Keeps it centered and not too wide */
+    max-width: 900px;
 }
 
 /* Blog Post Styling */
