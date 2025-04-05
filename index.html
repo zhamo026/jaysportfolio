@@ -10,17 +10,27 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
-        <!-- PROFILE PICTURE -->
         <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        
         <h1>Jay</h1>
         <p><i>Software Engineer | Tech Content Creator | HomeLab</i></p>
         
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+
+                <!-- Projects with dropdown -->
+                <li class="dropdown">
+                    <a href="#">Projects</a>
+                    <ul class="dropdown-content">
+                        <li><strong>Tech</strong></li>
+                        <li><a href="#">Cloud</a></li>
+                        <li><a href="#">DevOps</a></li>
+                        <li><strong>Design</strong></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Illustrations</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
