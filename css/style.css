@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    height: 100vh; /* Ensures full height */
     background-color: #f4f4f4;
 }
 
@@ -12,6 +13,11 @@ body {
     background: #ebebeb;
     padding: 20px;
     text-align: center;
+    height: 100vh; /* Sidebar extends full page height */
+    position: fixed; /* Fix it to the left */
+    left: 0;
+    top: 0;
+    overflow-y: auto;
 }
 
 .profile-pic {
@@ -27,6 +33,7 @@ body {
 .sidebar nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
 }
 
 .sidebar nav ul li {
@@ -37,17 +44,20 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.sidebar nav ul li a.active {
+.sidebar nav ul li a.active,
+.sidebar nav ul li a:hover {
     background: #ddd;
-    padding: 5px 10px;
-    border-radius: 5px;
 }
 
 /* Main Content */
 .content {
     flex: 1;
+    margin-left: 250px; /* Offset content so it doesn’t go under the sidebar */
     padding: 20px;
 }
 
@@ -70,21 +80,4 @@ body {
     height: 100px;
     object-fit: cover;
     margin-right: 10px;
-    border-radius: 5px;
-}
-
-.post-content h2 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.post-content p {
-    font-size: 14px;
-    color: #666;
-}
-
-.post-content span {
-    font-size: 12px;
-    color: #999;
-}
-
+    border-radius: 5px
