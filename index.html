@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jay | Tech Portfolio</title>
+  <title>Jay's Tech Blog</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- for icons -->
 </head>
 <body>
 
@@ -13,39 +13,34 @@
   <aside class="sidebar">
     <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
     <h1>Jay</h1>
-    <p><i>Could | DevOps | Data Analytics | Graphic Design | Illustrator | HomeLab</i></p>
+    <p><i>Software Engineer | Tech Content Creator | HomeLab</i></p>
 
     <nav>
       <ul>
-        <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li><a href="#"><i class="fa-solid fa-user"></i> About</a></li>
-        <li><a href="#"><i class="fa-solid fa-lock"></i> Merch</a></li>
-        <li><a href="#"><i class="fa-solid fa-handshake"></i> Sponsor</a></li>
+        <li><a href="#">About</a></li>
+
+        <!-- Projects dropdown with click-to-toggle -->
+        <li>
+          <a href="#" id="projects-toggle">
+            <i class="fa-solid fa-diagram-project"></i> Projects
+          </a>
+          <ul id="projects-menu" class="submenu">
+            <li><a href="#">Homelab Setup</a></li>
+            <li><a href="#">Cloud Tools</a></li>
+            <li><a href="#">DevOps Scripts</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://linkedin.com/in/yourhandle" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
   </aside>
 
   <!-- Main Content -->
   <main class="content">
-    <section class="about-welcome">
-      <h2>Hello, I’m Jay 👋</h2>
-      <p>I’m a software engineer with a passion for home labs, cloud architecture, and building cool things on the internet. I love sharing my journey through content creation, helping others level up their skills in DevOps, self-hosting, and automation.</p>
-      <p>Here are some of the things I enjoy working with:</p>
-      <ul>
-        <li>🔧 HomeLab & Self-Hosting</li>
-        <li>☁️ Cloud Infrastructure (AWS, Azure, Proxmox)</li>
-        <li>🚀 DevOps Tools (Docker, Kubernetes, CI/CD)</li>
-        <li>🎨 UI/UX & Creative Design</li>
-      </ul>
-      <p>Thanks for stopping by — feel free to explore or reach out!</p>
+    <section class="welcome">
+      <h2>Hello, I'm Jay 👋</h2>
+      <p>I'm a software engineer with a passion for homelab, DevOps, and creative tech projects. This site showcases my journey, projects, and tutorials in cloud, automation, and design. Thanks for stopping by!</p>
     </section>
   </main>
 
