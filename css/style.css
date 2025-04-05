@@ -1,28 +1,33 @@
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0;
   display: flex;
-  background-color: #f9f9f9;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
+/* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #333;
-  color: white;
+  background: #ebebeb;
   padding: 20px;
-  min-height: 100vh;
+  text-align: center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+}
+
+.profile-pic {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .sidebar h1 {
-  margin-top: 10px;
-}
-
-.sidebar img.profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #fff;
+  font-size: 22px;
+  margin: 10px 0;
 }
 
 .sidebar nav ul {
@@ -32,60 +37,45 @@ body {
 }
 
 .sidebar nav ul li {
-  margin: 10px 0;
+  padding: 10px 0;
 }
 
 .sidebar nav ul li a {
-  color: white;
   text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
 }
 
+.sidebar nav ul li a:hover {
+  background: #ddd;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+  padding-left: 10px;
+}
+
+.dropdown.open .dropdown-content {
+  max-height: 300px;
+  opacity: 1;
+}
+
+.dropdown-content li a {
+  font-weight: normal;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+/* Main Content */
 .content {
   flex: 1;
-  padding: 40px;
-}
-
-.blog-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.blog-post {
-  background: white;
+  margin-left: 280px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.icon-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-top: 10px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.tech-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80px;
-}
-
-.circle-icon {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #ccc;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.tech-icon p {
-  margin-top: 8px;
-  font-size: 0.85rem;
-  text-align: center;
 }
