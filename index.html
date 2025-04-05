@@ -3,32 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jay's Profile</title>
+  <title>Jay's Experience</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <!-- Sidebar -->
   <aside class="sidebar">
-    <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic" />
     <h1>Jay</h1>
     <p><i>Cloud / DevOps / Data Analytics / HomeLab / Graphic Design / Illustration</i></p>
 
     <nav>
       <ul>
-        <li><a href="#">About</a></li>
-
-        <!-- Projects Dropdown -->
+        <li><a href="about.html">About</a></li>
         <li class="dropdown">
-          <a href="#" id="projects-toggle">Projects ▾</a>
-          <ul class="dropdown-menu" id="projects-menu">
+          <a href="#" id="projects-toggle">Projects</a>
+          <ul class="dropdown-content flat" id="projects-menu">
             <li><a href="#">Cloud</a></li>
             <li><a href="#">DevOps</a></li>
+            <li class="divider"></li>
             <li><a href="#">Graphic Design</a></li>
             <li><a href="#">Illustrations</a></li>
           </ul>
         </li>
-
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
@@ -36,98 +33,93 @@
 
   <!-- Main Content -->
   <main class="content">
-    <!-- About Section -->
-    <section>
-      <h2>Hi! I'm Jay</h2>
-      <p>I am a Data Analytics Engineer and Cloud Solutions Architect with a passion for Graphic Design and Illustrations.</p>
-      <h2>EXPERIENCE</h2>
-    </section>
-
-    <!-- Blog / Experience Section -->
     <section class="blog-list">
-
-      <!-- Cloud Experience -->
+      <!-- Cloud Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>CLOUD</h2>
-          <div class="icon-grid">
-            <div class="tech-icon">
-              <img src="images/aws.png" class="circle-icon" alt="AWS" />
+          <div class="experience-icons">
+            <div class="icon-item">
+              <img src="images/aws.png" alt="AWS">
               <p>AWS</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/docker.png" class="circle-icon" alt="Docker" />
+            <div class="icon-item">
+              <img src="images/docker.png" alt="Docker">
               <p>Docker</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/proxmox.png" class="circle-icon" alt="Proxmox" />
+            <div class="icon-item">
+              <img src="images/proxmox.png" alt="Proxmox">
               <p>Proxmox</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/kubernetes.png" class="circle-icon" alt="Kubernetes" />
+            <div class="icon-item">
+              <img src="images/kubernetes.png" alt="Kubernetes">
               <p>Kubernetes</p>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Data Analytics -->
+      <!-- Data Analytics Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>DATA ANALYTICS</h2>
-          <div class="icon-grid">
-            <div class="tech-icon">
-              <img src="images/mysql.png" class="circle-icon" alt="MySQL" />
+          <div class="experience-icons">
+            <div class="icon-item">
+              <img src="images/mysql.png" alt="MySQL">
               <p>MySQL</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/mariadb.png" class="circle-icon" alt="MariaDB" />
+            <div class="icon-item">
+              <img src="images/mariadb.png" alt="MariaDB">
               <p>MariaDB</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/postgresql.png" class="circle-icon" alt="PostgreSQL" />
+            <div class="icon-item">
+              <img src="images/postgres.png" alt="PostgreSQL">
               <p>PostgreSQL</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/phpmyadmin.png" class="circle-icon" alt="phpMyAdmin" />
+            <div class="icon-item">
+              <img src="images/phpmyadmin.png" alt="phpMyAdmin">
               <p>phpMyAdmin</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/vscode.png" class="circle-icon" alt="VSCode" />
-              <p>VSCode</p>
+            <div class="icon-item">
+              <img src="images/vscode.png" alt="VS Code">
+              <p>VS Code</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/mqtt.png" class="circle-icon" alt="MQTT" />
+            <div class="icon-item">
+              <img src="images/mqtt.png" alt="MQTT">
               <p>MQTT</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/tableau.png" class="circle-icon" alt="Tableau" />
+            <div class="icon-item">
+              <img src="images/tableau.png" alt="Tableau">
               <p>Tableau</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/rstudio.png" class="circle-icon" alt="R Studio" />
-              <p>R Studio</p>
+            <div class="icon-item">
+              <img src="images/rstudio.png" alt="RStudio">
+              <p>RStudio</p>
             </div>
           </div>
         </div>
       </article>
 
-      <!-- Graphic Design -->
+      <!-- Graphic Design Section -->
       <article class="blog-post">
         <div class="post-content">
           <h2>GRAPHIC DESIGN</h2>
-          <div class="icon-grid">
-            <div class="tech-icon">
-              <img src="images/photoshop.png" class="circle-icon" alt="Photoshop" />
-              <p>Photoshop</p>
-            </div>
-            <div class="tech-icon">
-              <img src="images/illustrator.png" class="circle-icon" alt="Illustrator" />
+          <div class="experience-icons">
+            <div class="icon-item">
+              <img src="images/illustrator.png" alt="Illustrator">
               <p>Illustrator</p>
             </div>
-            <div class="tech-icon">
-              <img src="images/figma.png" class="circle-icon" alt="Figma" />
+            <div class="icon-item">
+              <img src="images/photoshop.png" alt="Photoshop">
+              <p>Photoshop</p>
+            </div>
+            <div class="icon-item">
+              <img src="images/figma.png" alt="Figma">
               <p>Figma</p>
+            </div>
+            <div class="icon-item">
+              <img src="images/canva.png" alt="Canva">
+              <p>Canva</p>
             </div>
           </div>
         </div>
@@ -135,15 +127,6 @@
     </section>
   </main>
 
-  <!-- JavaScript for dropdown -->
-  <script>
-    const toggle = document.getElementById("projects-toggle");
-    const dropdown = document.querySelector(".dropdown");
-
-    toggle.addEventListener("click", function (e) {
-      e.preventDefault();
-      dropdown.classList.toggle("open");
-    });
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>
