@@ -114,19 +114,17 @@ body {
 }
 
 .skill-item img {
-  width: 50px;  /* Default size for most icons */
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-bottom: 10px;
+  object-fit: cover;  /* Keep the image inside the circle */
 }
 
-/* Adjust size for MariaDB and Adobe icons */
-.skill-item.mariadb img,
-.skill-item.adobe img {
-  width: 30px; /* Smaller size for MariaDB and Adobe */
-  height: 30px;
-}
-
-.skill-item p {
-  font-size: 12px;
+/* Make MariaDB and Adobe images smaller inside the circle */
+.skill-item img.mariadb,
+.skill-item img.adobe {
+  width: 40px;  /* Smaller size for MariaDB and Adobe */
+  height: 40px;
+  object-fit: contain;  /* Ensure the whole image fits inside the circle */
 }
