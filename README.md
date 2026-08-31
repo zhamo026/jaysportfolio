@@ -22,7 +22,7 @@
 - [15. Quick Project Summary](#15-quick-project-summary)
 - [16. Limitations](/reports/limitations.md)
 - [17. Final Report](/reports/final_workforce_employee_retention_report.md)
-- [18. Certificate](https://github.com/zhamo026/data_analytics/tree/main)
+- [18. Certificate](/images/dominguez_data_certificate.pdf)
 
 ---
 
@@ -695,3 +695,9 @@ See [Limitations](reports/limitations.md) for the full data-disclosure notice.
 See [Final Report](reports/final_workforce_employee_retention_report.md) for the complete write-up of findings, insights, and recommendations.
 
 ---
+
+## 18. Certificate
+
+ See [18. Certificate](/images/dominguez_data_certificate.pdf)
+
+ ---
